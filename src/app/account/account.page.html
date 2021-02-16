@@ -1,0 +1,48 @@
+
+<ion-content >
+  <ion-header>
+    <ion-toolbar class="toolbar" >
+        <ion-grid class="toolbar">  
+          <ion-row class="align">
+            <ion-col size="1">
+              <div><ion-icon class="chevron"  (click)="onbackClick()" name="chevron-back-outline"></ion-icon></div>
+            </ion-col>
+            <ion-col class="logo" size="3">
+              <img src="assets\splashscreen.png" id="icon" alt="User Icon"/>
+            </ion-col>
+            <ion-col class="Account">
+              <div>Account Details</div>
+            </ion-col>
+            <ion-col class="logout" size="2">
+              <div class="logout" (click)="onlogoutClick()">  Log out </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-toolbar>
+  </ion-header>
+<form #form="ngForm" (ngSubmit)="onSubmitClick(form.value)">
+  <div class="data">
+      <label class="data" for="fname">First name</label><br>
+      <input type="text" id="fname"  name="fname" [(ngModel)]="fname"><br>
+      <label class="data"for="lname">Last name</label><br>
+      <input type="text" id="lname" name="lname" [(ngModel)]="lname"><br>
+      <label class="data" for="pnumber">Phone number</label><br>
+      <input type="text" id="pnumber" name="pnumber" [(ngModel)]="pnumber"><br>
+      <label class="data"for="aline1">Address line 1</label><br>
+      <input type="text" id="aline1" name="aline1" [(ngModel)]="aline1"><br>
+      <label class="data"for="aline2">Address line 2</label><br>
+      <input type="text" id="aline2" name="aline2" [(ngModel)]="aline2"><br>
+      <label class="data" for="state">State / Region</label><br>
+      <input type="text" id="state" name="state" [(ngModel)]="state"><br>
+      <label class="data"for="zip">Zip</label><br>
+      <input type="text" id="zip" name="zip" [(ngModel)]="zip">
+  </div>
+  <div class="button">
+      <ion-button type = "submit" color="dark" expand="block">Update Details</ion-button>
+  </div>
+</form>
+<div class="App app-version">
+  <p>App version 1.0</p>
+</div>
+
+</ion-content>

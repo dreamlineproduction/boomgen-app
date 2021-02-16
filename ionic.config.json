@@ -1,0 +1,8 @@
+{
+  "name": "boomgengen",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

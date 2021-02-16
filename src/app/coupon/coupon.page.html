@@ -1,0 +1,76 @@
+<ion-content [fullscreen]="flase">
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <div class="fadeIn first">
+
+        <ion-app>
+          <ion-header translucent>
+            <ion-toolbar>
+              <ion-grid class="toolbar">
+                <ion-row class="align">
+                  <ion-col size="1">
+                    <div>
+                      <ion-icon class="chevron" (click)="onbackClick()" name="chevron-back-outline"></ion-icon>
+                    </div>
+                  </ion-col>
+                  <ion-col class="logo" size="3">
+                    <img src="assets\splashscreen.png" id="icon" alt="User Icon" />
+                  </ion-col>
+                  <ion-col class="Account">
+                    <div>Coupon Redeemed</div>
+                  </ion-col>
+                  <!-- <ion-col class="logout" size="2">
+                    <div>
+                      <ion-icon class="setting" (click)="oniconClick()" name="settings-outline"></ion-icon>
+                    </div>
+                  </ion-col> -->
+                </ion-row>
+              </ion-grid>
+            </ion-toolbar>
+          </ion-header>
+
+          <ion-content class="back" *ngIf="loaded" >
+            <!-- *ngIf="loaded" -->
+            <div  class="card">
+              <div class="todd_div">
+                <img class="todd" src="{{coupon.path}}" />
+                <h3 class="coupon_title">{{coupon.title}}</h3>
+              </div>
+              <ion-card-header>
+                <ion-card-title class="textcolor" *ngIf="coupon.percentage">{{coupon.percentage}} off</ion-card-title>
+                <ion-card-title class="textcolor" *ngIf="!coupon.percentage">{{coupon.fixed}} off</ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="onnext">
+                {{coupon.description}}
+              </ion-card-content>
+              <ion-card-content class="avaiable">
+                This coupon will be removed from the list of avaiable couponk Select the back button to eturn to the
+                Coupon list
+              </ion-card-content>
+              <ion-grid class="expiry_grid">
+                <ion-row>
+                  <ion-col size="6" class="ion-text-left">
+                    <div class="Expiry">Expiry Date</div>
+                    <div class="date">{{coupon.expirydate}}</div>
+                  </ion-col>
+
+                  <ion-col size="6" class="ion-text-left" *ngIf="redeemed">
+                    <div class="Expiry">Purchased Date</div>
+                    <div class="date">{{coupon.purchased}}</div>
+                  </ion-col>
+                  <ion-col size="6"  class="ion-text-right" *ngIf="!redeemed">
+                    <ion-icon class="pinter" *ngIf="screenshotBtn" (click)="screenShot()" name="print-outline"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+            </div>
+            <ion-icon slot="end" name="logo-ionic"></ion-icon>
+
+          </ion-content>
+        </ion-app>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

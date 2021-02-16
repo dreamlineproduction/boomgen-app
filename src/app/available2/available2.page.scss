@@ -1,0 +1,41 @@
+ion-item {
+    border-radius: 20px !important;
+    
+    font-size: 1em;
+    
+    margin-bottom: 10px;
+    
+    border-bottom: 0px !important;
+    box-shadow: none !important;
+}
+
+.align{
+    align-items: center;
+}
+
+.radious{
+    width:100%;
+    background-color: rgb(228, 228, 228);
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.chevron{
+    color: rgb(184, 178, 178);
+    width: 20px;
+    height: 25px;
+}
+.setting{
+    color: rgb(184, 178, 178);
+    width: 50px;
+    height: 25px;
+}
+
+.picture{
+    border-radius: 15px;
+}
+.h3{
+    font-family: 'Manrope', sans-serif;
+}

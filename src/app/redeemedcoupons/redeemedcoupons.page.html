@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar" >
+    <ion-grid class="toolbar">  
+      <ion-row class="align">
+        <ion-col size="1">
+          <div><ion-icon class="chevron" (click)="onbackClick()" name="chevron-back-outline"></ion-icon></div>
+        </ion-col>
+        <ion-col class="logo" size="3">
+          <img src="assets\splashscreen.png" id="icon" alt="User Icon"/>
+        </ion-col>
+        <ion-col class="Account">
+          <div>Redeemed Coupons</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="available_content">
+  <div class="radious">
+    <ion-item *ngFor="let coupon of couponlist;">
+      <ion-thumbnail slot="start">
+        <div class="pic">
+         
+            <img class="picture" src="{{coupon.path}}">
+           
+        </div>
+      </ion-thumbnail>
+      <ion-label class="lable" (click)="goToDetail(coupon.id)">
+        <h3>{{coupon.title}}</h3>
+        <h5>{{coupon.description}}</h5>
+      </ion-label>
+    </ion-item>
+  </div>  
+</ion-content>

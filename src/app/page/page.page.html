@@ -1,0 +1,46 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar class="toolbar" >
+        <ion-buttons>
+          <ion-button >
+            <ion-icon class="back-outline" name="chevron-back-outline"></ion-icon>
+          </ion-button>
+         
+          <img style="width: 70px; height: 70px;" class="logo" src="assets\logo2.png" />
+        
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <div class="logout">
+            Log out
+          </div>
+        </ion-buttons>
+
+        <ion-title>Account Details</ion-title>
+      </ion-toolbar>
+  </ion-header>
+<form>
+<div class="data">
+    <label class="data" for="fname">First name</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label class="data"for="lname">Last name</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label class="data" for="fname">Phone number</label><br>
+    <input type="text" id="pnumber" name="pnumber"><br>
+    <label class="data"for="lname">Address line 1</label><br>
+    <input type="text" id="aline1" name="aline1"><br>
+    <label class="data"for="fname">Address line 2</label><br>
+    <input type="text" id="aline2" name="aline2"><br>
+    <label class="data" for="lname">State / Region</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label class="data"for="lname">Zip</label><br>
+    <input type="text" id="lname" name="lname">
+  </div>
+    <div class="button">
+        <ion-button expand="block">Update Details</ion-button>
+    </div>
+   <div class="App">
+    <p>App version 2.2.2.2.2.</p>
+  </div>
+  </form>
+</ion-content>

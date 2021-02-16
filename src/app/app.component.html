@@ -1,0 +1,33 @@
+<ion-app>
+  <ion-menu side="end" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar>
+          <ion-row class="ion-padding">
+            <ion-col class="logo" size="3">
+              <img src="assets\splashscreen.png" id="icon" alt="User Icon"/>
+            </ion-col>
+            <ion-col class="account">
+              <div>Settings</div>
+            </ion-col>
+          </ion-row>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-row class="ion-padding list_row" menuClose (click) = "openMyAccount()">
+            <ion-icon class="list_icon" name="key-outline"></ion-icon>
+            <ion-text class="list_text">Account Details</ion-text>
+          </ion-row>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-row class="ion-padding list_row" menuClose (click) = "openMyCoupons()">
+            <ion-icon class="list_icon" name="gift-outline"></ion-icon>
+            <ion-text class="list_text">Redeemed Coupons</ion-text>
+          </ion-row>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

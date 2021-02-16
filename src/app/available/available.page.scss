@@ -1,0 +1,111 @@
+ion-item {
+  border-radius: 2px !important;
+  --inner-border-width: 0px 0px 0px 0px !important;
+  margin-bottom: 10px;
+  border-bottom: 0px !important;
+}
+
+.align {
+  align-items: center;
+}
+
+.radious {
+  width: 100%;
+  background-color: #f7f7fe;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.available_content {
+  --background: #f7f7fe !important;
+}
+
+.chevron {
+  color: rgb(184, 178, 178);
+  width: 20px;
+  height: 25px;
+}
+.setting {
+  color: rgb(184, 178, 178);
+  width: 50px;
+  height: 25px;
+}
+
+.picture {
+  border-radius: 13px;
+  align-items: center;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.Account {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 700;
+  color: #929292;
+}
+
+a {
+  font-size: 12px;
+  color: #272868;
+  padding-top: 20px;
+}
+.pic {
+  background-color: #f2f3f9 !important;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+ion-slides {
+  height: max-content;
+  background: white;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+
+.slider_image {
+  max-width: 100px;
+  max-height: 80px;
+}
+
+.main_slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_slider p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.slider_title {
+  color: #6370ff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.slider_description {
+  font-size: 10px;
+  font-weight: 400;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.slider_div {
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}

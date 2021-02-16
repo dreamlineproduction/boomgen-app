@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+  <ion-grid class="toolbar">  
+      <ion-row class="align">
+       
+        <ion-col class="logo" size="3">
+          <img src="assets\splashscreen.png" id="icon" alt="User Icon"/>
+        </ion-col>
+        <ion-col class="Account">
+          <div>Available Coupons</div>
+        </ion-col>
+        <!-- <ion-col class="logout" size="2">
+          <div><ion-icon class="setting" (click)="oniconClick()" name="settings-outline"></ion-icon></div>
+        </ion-col> -->
+        <ion-buttons class="menu_btn">
+          <ion-menu-button menu="first"><ion-icon class="setting" name="settings-outline"></ion-icon></ion-menu-button>
+        </ion-buttons>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-refresher slot ="fixed" disabled="false" (ionRefresh)="doRefresh($event)" pullFactor="0.5" pullMin="100" pullMax="200">  
+    <ion-refresher-content  
+    pullingIcon="arrow-down"  
+    pullingText="Pull to refresh"  
+    refreshingSpinner="bubbles"  
+    refreshingText="Refreshing....."></ion-refresher-content>   
+  </ion-refresher> 
+<ion-content class="available_content ion-padding-top">
+  <ion-row class="ion-justify-content-center" *ngIf="adlists.length > 0">
+    <ion-col size="11">
+      <ion-slides pager="true" [options]="sliderOptions" id="main_slider_container">
+        <ion-slide *ngFor="let adlist of adlists" class="main_slider">
+          <div size="12" class="slider_div"><img src="{{adlist.path}}" id="icon" class="slider_image" alt="User Icon"/></div>
+          <div size="12" class="slider_div"> <h4 class="slider_title">{{adlist.title}}</h4></div>
+          <div size="12" class="slider_div"> <p class="slider_description">{{adlist.description}}</p></div>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+  <div class="radious">
+   
+    <ion-item *ngFor="let coupon of couponlist;">
+      <ion-thumbnail slot="start">
+        <div class="pic">
+         
+            <img class="picture" src="{{coupon.path}}">
+           
+        </div>
+      </ion-thumbnail>
+      <ion-label class="lable">
+        <h3>{{coupon.title}}</h3>
+        <h5>{{coupon.description}}</h5>
+        <a (click)="redeem(coupon.id)" class="here">Click here to redeem </a>
+      </ion-label>
+    </ion-item>
+  </div>  
+</ion-content>

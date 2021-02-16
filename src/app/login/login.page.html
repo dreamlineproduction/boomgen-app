@@ -1,0 +1,29 @@
+
+
+<ion-content>
+  
+  <div class="wrapper fadeInDown">
+    <div id="">
+      <!-- Tabs Titles -->
+      <div class="fadeInfirst">
+        <img src="assets/logo1.png" id="icon" alt="User Icon" />
+      </div>
+      <div class="youraccount">  
+        <h2> Login to your Account </h2>
+      </div>
+      <!-- Login Form -->
+      <div class="align" class="ion-text-center">
+        <form #form="ngForm" (ngSubmit)="onSubmitClick(form.value)">
+          <input [(ngModel)]="email" type="text" id="login" class="fadeIn second" name="email" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$">
+          <input type="password" [(ngModel)]="password" id="password" class="fadeIn third input_box" name="password" placeholder="Password">
+          <div class="button">
+            <input type="submit" class="fadeIn fourth" value="Submit">
+          </div>
+        </form>
+      </div>  
+      <div class="a">
+        <a class="underlineHover" (click) = "forgot()">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+</ion-content>
