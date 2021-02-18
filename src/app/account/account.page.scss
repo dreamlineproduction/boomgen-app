@@ -19,6 +19,16 @@ input[type="text"] {
   box-shadow: 0 0.75rem 1.5rem rgb(236 242 247 / 56%);
 }
 
+.usr-pro-img img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: auto;
+  margin-left: 110px;
+  border: 2px solid #b1b1b1;
+  box-shadow: 0 0.75rem 1.5rem rgb(130 130 130 / 31%);
+}
+
 .button {
   padding-left: 8px;
   padding-right: 8px;

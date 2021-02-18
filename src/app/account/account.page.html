@@ -22,9 +22,17 @@
   </ion-header>
 <form #form="ngForm" (ngSubmit)="onSubmitClick(form.value)">
   <div class="data ion-margin-top">
-    <ion-avatar>
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-    </ion-avatar>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="usr-pro-img col-6 offset-3 text-center" >
+         
+         
+              <img text-center src="https://www.mantruckandbus.com/fileadmin/media/bilder/02_19/219_05_busbusiness_interviewHeader_1485x1254.jpg" width="300">
+           
+      
+        </ion-col>
+      </ion-row>
+    </ion-grid>
     
     <label class="data" for="email">Email Address</label><br>
     <input type="text" id="email"  name="email" [(ngModel)]="email" readonly><br>
