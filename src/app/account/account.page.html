@@ -13,8 +13,8 @@
             <ion-col class="Account">
               <div>Account Details</div>
             </ion-col>
-            <ion-col class="logout" size="2">
-              <div class="logout" (click)="onlogoutClick()">  Log out </div>
+            <ion-col class="logout" size="3">
+              <div class="logout" (click)="onlogoutClick()">  <ion-icon name="exit-outline"></ion-icon> Log out </div>
             </ion-col>
           </ion-row>
         </ion-grid>
@@ -55,6 +55,13 @@
       <ion-button type = "submit" color="dark" expand="block">Update Details</ion-button>
   </div>
 </form>
+<ion-card>
+
+
+  <ion-card-content class="ion-text-center">
+   <small class="text-center">To change your current Email please write an request to admin at <a href="mailto:info@boomgen.com">info@boomgen.com</a></small>
+  </ion-card-content>
+</ion-card>
 <div class="App app-version">
   <p>App version 1.0</p>
 </div>
