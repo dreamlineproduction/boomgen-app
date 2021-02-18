@@ -21,7 +21,13 @@
       </ion-toolbar>
   </ion-header>
 <form #form="ngForm" (ngSubmit)="onSubmitClick(form.value)">
-  <div class="data">
+  <div class="data ion-margin-top">
+    <ion-avatar>
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    
+    <label class="data" for="email">Email Address</label><br>
+    <input type="text" id="email"  name="email" [(ngModel)]="email" readonly><br>
       <label class="data" for="fname">First name</label><br>
       <input type="text" id="fname"  name="fname" [(ngModel)]="fname"><br>
       <label class="data"for="lname">Last name</label><br>

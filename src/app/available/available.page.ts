@@ -118,7 +118,7 @@ export class AvailablePage implements OnInit {
             id: id
           }
         }
-        this.getAllCoupons()
+        this.getAllCoupons();
         this.router.navigate(['/coupon'], navData);
         loading.dismiss(); 
       }else{
@@ -151,7 +151,8 @@ export class AvailablePage implements OnInit {
   doRefresh(event) {  
     console.log(this.couponlist);  
     setTimeout(() => {
-      this.couponlist = this.couponlist;
+      this.getAds();
+      this.getAllCoupons();
       event.target.complete();
     }, 1500);
   }
