@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 export class ServiceService {
 
   options:any;
-  url = "https://testmyserver.in/boomgen/public/api/";
+  url = "http://boomgen.crtvecode.in/api/";
   constructor(private http: HttpClient,private httpBackend: HttpBackend, public navCtrl: NavController) {
     this.http = new HttpClient(this.httpBackend);
     let headers = new HttpHeaders({

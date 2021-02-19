@@ -17,6 +17,7 @@ export class AccountPage implements OnInit {
   zip:any;
   uid:any;
   email:any;
+  path:any;
   constructor(private router: Router, public navCtrl: NavController, public server: ServiceService, public toastController: ToastController, public loadingController: LoadingController) { 
     this.fname = localStorage.getItem("user_firstname");
     this.lname = localStorage.getItem("user_lastname");
@@ -27,7 +28,7 @@ export class AccountPage implements OnInit {
     this.zip = localStorage.getItem("zip");
     this.uid = localStorage.getItem("user_id");
     this.email = localStorage.getItem("user_email");
-
+    this.path = localStorage.getItem("user_image");
     let uid = localStorage.getItem('user_id');
     if(uid == null || uid == ""){
       this.navCtrl.navigateForward('login');

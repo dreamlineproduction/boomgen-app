@@ -109,3 +109,22 @@ h6 {
   text-align: -webkit-center;
   text-align: -moz-center;
 }
+
+.vertical_center{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: unset !important;
+}
+
+.sorry_text{
+  color: #80808040;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sorry_description{
+  color: #80808040;
+  font-size: 14px;
+  font-weight: bold;
+}

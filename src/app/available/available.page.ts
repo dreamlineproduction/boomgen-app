@@ -115,7 +115,8 @@ export class AvailablePage implements OnInit {
         console.log("coupon redeemed",response );
         const navData: NavigationExtras = {
           queryParams: {
-            id: id
+            id: id,
+            redeemed: "false"
           }
         }
         this.getAllCoupons();

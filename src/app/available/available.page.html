@@ -28,7 +28,7 @@
     refreshingText="Refreshing....."></ion-refresher-content>   
   </ion-refresher> 
 <ion-content class="available_content ion-padding-top">
-  <ion-row class="ion-justify-content-center" *ngIf="adlists.length > 0">
+  <ion-row class="ion-justify-content-center" *ngIf="adlists.length > 0 && couponlist.length > 0">
     <ion-col size="11">
       <ion-slides pager="true" [options]="sliderOptions" id="main_slider_container">
         <ion-slide *ngFor="let adlist of adlists" class="main_slider">
@@ -39,9 +39,8 @@
       </ion-slides>
     </ion-col>
   </ion-row>
-  <div class="radious">
-   
-    <ion-item *ngFor="let coupon of couponlist;">
+  <div class="radious" *ngIf="couponlist.length > 0">
+   <ion-item *ngFor="let coupon of couponlist;">
       <ion-thumbnail slot="start">
         <div class="pic">
          
@@ -56,4 +55,23 @@
       </ion-label>
     </ion-item>
   </div>  
+  <div class="radious vertical_center" *ngIf="couponlist.length <= 0">
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <img src="assets\sorry-icon.svg" id="icon" alt="User Icon"/>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center sorry_text">
+        Sorry!
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10" class="ion-text-center sorry_description">
+        <ion-text>
+          Currently there is no coupon available for you. Please check back later
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>

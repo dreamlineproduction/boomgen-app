@@ -43,6 +43,7 @@ export class CouponPage implements OnInit {
           this.id = data.id;
           this.getRedeemedCouponDetails(this.id);
         }else{
+          this.redeemed = false;
           this.id = data.id;
           this.getCouponDetails(this.id);
         }
@@ -91,6 +92,7 @@ export class CouponPage implements OnInit {
         this.coupon = response;
         console.log("coupon details",this.coupon );
         this.title = this.coupon.title;
+        this.expiry = this.datePipe.transform(this.coupon.expirydate, 'dd/MM/yyyy');
         this.loaded = true;
         loading.dismiss();
       }else{
@@ -114,8 +116,9 @@ export class CouponPage implements OnInit {
       if ( response.error == undefined) {
         this.coupon = response;
         console.log("coupon details",this.coupon );
-        const date =  this.datePipe.transform(this.coupon.purchased, 'dd/MM/yyyy')
+        const date =  this.datePipe.transform(this.coupon.purchased, 'dd/MM/yyyy');
         this.coupon.purchased = date;
+        this.expiry = this.datePipe.transform(this.coupon.expirydate, 'dd/MM/yyyy');
         console.log("coupon details",this.coupon );
         this.title = this.coupon.title;
         this.loaded = true;

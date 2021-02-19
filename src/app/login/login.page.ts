@@ -49,6 +49,7 @@ password:any;
             localStorage.setItem('state', response[0].state);
             localStorage.setItem('zip', response[0].zip);
             localStorage.setItem('user_id', response[0].id);
+            localStorage.setItem('user_image', response[0].path);
             this.navCtrl.navigateForward('available');
             loading.dismiss();
           }else{
