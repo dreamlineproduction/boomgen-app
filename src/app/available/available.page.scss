@@ -65,13 +65,14 @@ a {
 ion-slides {
   height: max-content;
   background: white;
-  padding: 10px 0px;
+  padding: 0px 0px;
   border-radius: 5px;
+  box-shadow: 0 0.75rem 1.5rem rgb(236 242 247 / 56%);
 }
 
 .slider_image {
-  max-width: 100px;
-  max-height: 80px;
+  max-width: 100%;
+  max-height: max-content;
 }
 
 .main_slider {
@@ -110,20 +111,20 @@ h6 {
   text-align: -moz-center;
 }
 
-.vertical_center{
+.vertical_center {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding-top: unset !important;
 }
 
-.sorry_text{
+.sorry_text {
   color: #80808040;
   font-size: 30px;
   font-weight: bold;
 }
 
-.sorry_description{
+.sorry_description {
   color: #80808040;
   font-size: 14px;
   font-weight: bold;

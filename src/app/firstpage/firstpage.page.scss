@@ -1,57 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap");
 
 body {
   font-family: "Manrope", sans-serif;
   height: 100vh;
 }
-ion-content.background{
-    // --background:linear-gradient(to bottom,#1a20b4, #fff 60%);
-    // --ion-background-color:  #1a20b4;
-    // background-image: url(/assets/img/background.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    --background: linear-gradient(to bottom,#1a20b4, #010353 80%)
-    
-   
+ion-content.background {
+  // --background:linear-gradient(to bottom,#1a20b4, #fff 60%);
+  // --ion-background-color:  #1a20b4;
+  // background-image: url(/assets/img/background.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  --background: linear-gradient(to bottom, #1a20b4, #010353 80%);
 }
 
 a {
   color: #0f43b3;
-   font-weight: 400;
-  }
+  font-weight: 400;
+}
 
 h2 {
   text-align: center;
   margin-bottom: -15px;
   font-size: 16px;
   font-weight: 600;
-  color: #FFFF;
+  color: #ffff;
   font-family: "Manrope", sans-serif;
 }
 h3 {
-    text-align: center;
-    padding-top: 100px;
-    font-size: 12px;
-    font-weight: 500;
-    color: #FFFF;
-    font-family: "Manrope", sans-serif;
-  }
+  text-align: center;
+  padding-top: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffff;
+  font-family: "Manrope", sans-serif;
+}
 /* STRUCTURE */
-.fadeInfirst{
-    width: 150%;
-    padding-left: 30px;
-  }
- 
+.fadeInfirst {
+  width: 150%;
+  padding-left: 30px;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
   padding: 20px;
 }
-.youraccount{
-    font-family: 'Manrope', sans-serif;
-    padding-top: 20px;
+.youraccount {
+  font-family: "Manrope", sans-serif;
+  padding-top: 20px;
 }
-input[type=button], input[type=submit], input[type=reset]  {
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   background-color: #0b40a1;
   border: none;
   color: white;
@@ -59,14 +59,15 @@ input[type=button], input[type=submit], input[type=reset]  {
   text-align: center;
   font-size: 13px;
   border-radius: 8px;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   background-color: #1c2dc8;
 }
-input[type=text] {
-  
+input[type="text"] {
   padding: 15px 10px;
   text-decoration: none;
   display: inline-block;
@@ -77,7 +78,7 @@ input[type=text] {
   border-radius: 8px;
 }
 
-.input_box{
+.input_box {
   padding: 15px 10px;
   text-decoration: none;
   display: inline-block;
@@ -88,17 +89,14 @@ input[type=text] {
   border-radius: 8px;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   background-color: #fff;
   border-bottom: 2px solid #0a2394;
 }
 
-input[type=text]:placeholder {
-  
-    color: #FFFF;
+input[type="text"]:placeholder {
+  color: #ffff;
 }
-
-
 
 /* ANIMATIONS */
 
@@ -111,7 +109,6 @@ input[type=text]:placeholder {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 
 @keyframes fadeInDown {
   0% {
@@ -127,32 +124,52 @@ input[type=text]:placeholder {
 }
 
 /* Simple CSS3 Fade-in Animation */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .fadeIn {
-  opacity:0;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
-.align{
-    padding-left: 10px;
-    
+.align {
+  padding-left: 10px;
 }
-.button{
-    padding-left: 4%;
-    margin-top: 15px;
+.button {
+  padding-left: 4%;
+  margin-top: 15px;
 }
 .fadeIn.first {
   -webkit-animation-delay: 0.4s;
@@ -190,25 +207,23 @@ input[type=text]:placeholder {
 .underlineHover:hover {
   color: #0d0d0d;
 }
-.a{
-    text-align: center;
-    padding-top: 60px;
+.a {
+  text-align: center;
+  padding-top: 60px;
 }
 
-.underlineHover:hover:after{
+.underlineHover:hover:after {
   width: 100%;
 }
-
-
 
 /* OTHERS */
 
 *:focus {
-    outline: none;
-} 
+  outline: none;
+}
 
 #icon {
-  width:60%;
+  width: 60%;
   padding-top: 150px;
 }
 
