@@ -10,11 +10,13 @@ export class FirstpagePage implements OnInit {
 
   constructor(public navCtrl: NavController) { 
     let uid = localStorage.getItem('user_id');
-    if(uid == null || uid == ""){
-      this.navCtrl.navigateForward('login');
-    }else{
-      this.navCtrl.navigateForward('available');
-    }
+    setTimeout(()=>{                          
+      if(uid == null || uid == ""){
+        this.navCtrl.navigateForward('login');
+      }else{
+        this.navCtrl.navigateForward('available');
+      }
+    }, 4000);
   }
 
   ngOnInit() {
