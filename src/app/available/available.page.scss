@@ -1,83 +1,108 @@
 ion-item {
-  border-radius: 2px !important;
-  --inner-border-width: 0px 0px 0px 0px !important;
-  margin-bottom: 10px;
-  border-bottom: 0px !important;
+    border-radius: 2px !important;
+    --inner-border-width: 0px 0px 0px 0px !important;
+    margin-bottom: 10px;
+    border-bottom: 0px !important;
 }
 
 .align {
-  align-items: center;
+    align-items: center;
 }
 
 .radious {
-  width: 100%;
-  background-color: #f7f7fe;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+    width: 100%;
+    background-color: #f7f7fe;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.coupon-card-style h5 {
+    margin-top: 25px;
+    color: #000;
+}
+
+.coupon-card-style h5,
+p {
+    text-align: center;
+}
+
+.coupon-card-hyper {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.coupon-card-hyper a {
+    color: #2021c6;
+    font-size: 16px;
 }
 
 .available_content {
-  --background: #f7f7fe !important;
+    --background: #f7f7fe !important;
 }
 
 .chevron {
-  color: rgb(184, 178, 178);
-  width: 20px;
-  height: 25px;
+    color: rgb(184, 178, 178);
+    width: 20px;
+    height: 25px;
 }
+
 .setting {
-  color: rgb(184, 178, 178);
-  width: 50px;
-  height: 25px;
+    color: rgb(184, 178, 178);
+    width: 50px;
+    height: 25px;
 }
 
 .picture {
-  border-radius: 13px;
-  align-items: center;
-  padding-top: 3px;
-  padding-left: 2px;
-  padding-right: 2px;
+    border-radius: 13px;
+    align-items: center;
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
+
 .Account {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 h3 {
-  font-weight: 700;
-  color: #929292;
+    font-weight: 700;
+    color: #929292;
 }
 
 a {
-  font-size: 12px;
-  color: #272868;
-  padding-top: 20px;
+    font-size: 12px;
+    color: #272868;
+    padding-top: 20px;
 }
+
 .pic {
-  background-color: #f2f3f9 !important;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
-  border-radius: 5px;
+    background-color: #f2f3f9 !important;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
 }
+
 ion-slides {
-  height: max-content;
-  background: white;
-  padding: 0px 0px;
-  border-radius: 5px;
-  box-shadow: 0 0.75rem 1.5rem rgb(236 242 247 / 56%);
+    height: max-content;
+    background: white;
+    padding: 0px 0px;
+    border-radius: 5px;
+    box-shadow: 0 0.75rem 1.5rem rgb(236 242 247 / 56%);
 }
 
 .slider_image {
-  max-width: 100%;
-  max-height: max-content;
+    max-width: 100%;
+    max-height: max-content;
 }
 
 .main_slider {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .main_slider p,
@@ -87,45 +112,45 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .slider_title {
-  color: #6370ff;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+    color: #6370ff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .slider_description {
-  font-size: 10px;
-  font-weight: 400;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+    font-size: 10px;
+    font-weight: 400;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }
 
 .slider_div {
-  text-align: -webkit-center;
-  text-align: -moz-center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
 }
 
 .vertical_center {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-top: unset !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: unset !important;
 }
 
 .sorry_text {
-  color: #80808040;
-  font-size: 30px;
-  font-weight: bold;
+    color: #80808040;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .sorry_description {
-  color: #80808040;
-  font-size: 14px;
-  font-weight: bold;
+    color: #80808040;
+    font-size: 14px;
+    font-weight: bold;
 }
