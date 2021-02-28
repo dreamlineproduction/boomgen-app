@@ -46,9 +46,9 @@
             <ion-card *ngFor="let coupon of couponlist;" class="coupon-card-style">
                 <ion-card-header>
                     <ion-thumbnail slot="start">
-                        <ion-img><img src="{{coupon.path}}"></ion-img>
+                        <ion-img (click)="redeem(coupon.id)"><img src="{{coupon.path}}"></ion-img>
                     </ion-thumbnail>
-                    <img class="picture" src="{{coupon.path}}">
+                    <img (click)="redeem(coupon.id)" class="picture" src="{{coupon.path}}">
                     <ion-card-subtitle>
                         <h5>{{coupon.title}}</h5>
                     </ion-card-subtitle>

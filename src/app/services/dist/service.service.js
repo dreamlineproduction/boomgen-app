@@ -19,7 +19,7 @@ var ServiceService = /** @class */ (function() {
         this.http = http;
         this.httpBackend = httpBackend;
         this.navCtrl = navCtrl;
-        this.url = "https://testmyserver.in/boomgen/public/api/";
+        this.url = "https://admin.boomgenhomeinspections.com/api/";
         this.http = new http_1.HttpClient(this.httpBackend);
         var headers = new http_1.HttpHeaders({
             'Content-Type': 'application/json'
